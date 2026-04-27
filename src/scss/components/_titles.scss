@@ -1,0 +1,22 @@
+@use '../abstracts/mixins' as *;
+
+.title-wrapper {
+  position: relative;
+}
+
+.title-main {
+  @include title-main-mixin;
+}
+
+.title-slider {
+  @include title-slider-mixin;
+}
+
+.title-sections {
+  @include title-sections-mixin;
+  position: relative;
+  display: inline-block;
+  &::after {
+    @include title-secondary-element;
+  }
+}
