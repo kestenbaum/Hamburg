@@ -1,0 +1,10 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "selector-class-pattern": "^[a-z][a-z0-9\\-]+$",
+    "max-nesting-depth": 3,
+    "order/properties-alphabetical-order": true,
+    "color-hex-length": "short"
+  }
+}
