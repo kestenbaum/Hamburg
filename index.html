@@ -11,10 +11,59 @@
     <title>Hamburg</title>
   </head>
   <body>
-    <h1 class="title-main">Hamburg</h1>
-    <h2 class="title-slider">Title slider</h2>
-    <section>
-      <h2 class="title-sections">FOOD</h2>
-    </section>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="javascript:void(0)">
+            <img class="header__logo header__icon" src="./src/assets/logo.svg" alt="header-logo" />
+          </a>
+          <nav class="header__nav">
+            <img
+              class="header__search header__icon"
+              src="src/assets/search-logo.png"
+              alt="search-logo"
+            />
+            <button class="burger" aria-label="Open menu">
+              <span class="burger__line"></span>
+            </button>
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="">Home</a>
+              </li>
+              <li class="header__menu-item header__menu-item--dropdown">
+                <input type="checkbox" id="culture-toggle" class="dropdown-toggle" />
+                <label for="culture-toggle" class="header__menu-link">
+                  Culture
+                  <span class="arrow"></span>
+                </label>
+                <ul class="header__submenu">
+                  <li class="header__menu-item">
+                    <a class="header__menu-sublink" href="#">Kino</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item header__menu-item--dropdown">
+                <input type="checkbox" id="food-toggle" class="dropdown-toggle" />
+                <label for="food-toggle" class="header__menu-link">
+                  Food
+                  <span class="arrow"></span>
+                </label>
+                <ul class="header__submenu">
+                  <li class="header__menu-item">
+                    <a class="header__menu-sublink" href="#">Pizza</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="">Secret moments</a>
+              </li>
+              <li class="header__menu-item header__menu-item--daten">
+                <a class="header__menu-link" href="">IMPRESSUM/ DATENSCHUTZ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
   </body>
 </html>

@@ -38,5 +38,17 @@
 
 @mixin border-main {
   border-radius: 30px;
-  border: 8px solid #4E55A2;
+  border: 8px solid #4e55a2;
+}
+
+@mixin flex-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
