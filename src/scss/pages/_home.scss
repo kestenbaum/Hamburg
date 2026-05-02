@@ -1,0 +1,31 @@
+@use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as *;
+
+.hero {
+  background-image: url('../../src/assets/hero-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero__inner {
+  @include mixins.flex-center();
+  flex-direction: column;
+  min-height: calc(100vh - 60px);
+  height: 100%;
+}
+
+.title__inner {
+  display: flex;
+  gap: 7px;
+  background-color: $color-primary;
+  padding: 4px 15px;
+  @include mixins.border-main;
+}
+
+.hero__subtitle {
+  @include mixins.font-main();
+  font-size: $font-size-title-card;
+  color: $color-secondary;
+  margin-bottom: 5px;
+}

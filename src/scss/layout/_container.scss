@@ -2,6 +2,8 @@ $container-max-width: 1200px;
 $container-padding: 16px;
 
 .container {
-  width: min(100% - (#{$container-padding} * 2), $container-max-width);
-  margin-inline: auto;
+  width: 100%;
+  max-width: $container-max-width;
+  margin: auto;
+  padding: 0 16px;
 }
