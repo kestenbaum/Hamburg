@@ -84,7 +84,8 @@
   padding: 0 26px;
   position: absolute;
   top: 60px;
-  right: 0;
+  right: -100%;
+  transition: 0.3s ease;
   height: calc(100vh - 60px);
   width: 50%;
   background-color: $color-primary;
@@ -96,6 +97,11 @@
   @media (max-width: 360px) {
     width: 100%;
   }
+}
+
+.header__menu-active {
+  right: 0;
+  transition: 0.3s ease;
 }
 
 .header__menu-item--daten {
